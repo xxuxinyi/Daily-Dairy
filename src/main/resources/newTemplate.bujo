@@ -1,0 +1,60 @@
+{
+  "maxEvents" : 5,
+  "maxTask" : 5,
+  "name" : "Week",
+  "Theme" : "DAYTIME",
+  "Days" : [ {
+    "day" : "SUN",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "MON",
+    "date" : "2023-06-22",
+    "events" : [ {
+      "name" : "MondayEvent",
+      "description" : "",
+      "category" : "",
+      "start-time" : "11:00",
+      "duration" : 50
+    } ],
+    "tasks" : [ {
+      "name" : "new",
+      "description" : "",
+      "category" : "important",
+      "complete" : false
+    } ]
+  }, {
+    "day" : "TUE",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "WED",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "THU",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "FRI",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "SAT",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ {
+      "name" : "SaturdayTask",
+      "description" : "",
+      "category" : "",
+      "complete" : true
+    } ]
+  } ],
+  "startDate" : "2023-06-22",
+  "Categories" : [ "important" ]
+}

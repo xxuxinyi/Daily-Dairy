@@ -1,0 +1,44 @@
+{
+  "maxEvents" : 7,
+  "maxTask" : 7,
+  "name" : "UNTITLED",
+  "Theme" : "DAYTIME",
+  "Days" : [ {
+    "day" : "SUN",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "MON",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "TUE",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "WED",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "THU",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "FRI",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  }, {
+    "day" : "SAT",
+    "date" : "2023-06-22",
+    "events" : [ ],
+    "tasks" : [ ]
+  } ],
+  "startDate" : "2023-06-22",
+  "Categories" : [ "new", "old" ]
+}

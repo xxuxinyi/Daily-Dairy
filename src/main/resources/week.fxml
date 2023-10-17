@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene stylesheets="@default/dayTime.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane prefHeight="200" prefWidth="200">
+      <VBox fx:id="all" prefHeight="800.0" prefWidth="602.0">
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <TextField fx:id="weekName" alignment="CENTER" prefHeight="50.0" prefWidth="1286.0">
+               <font>
+                  <Font name="Yuppy TC Regular" size="25.0" />
+               </font>
+            </TextField>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <Button fx:id="editName" mnemonicParsing="false" prefHeight="22.0" prefWidth="122.0" text="edit name" />
+               <Button fx:id="saveName" mnemonicParsing="false" prefHeight="23.0" prefWidth="122.0" text="save name" />
+            </VBox>
+         </HBox>
+         <HBox prefHeight="200.0" prefWidth="1432.0">
+            <Button fx:id="save" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" text="Save" />
+            <MenuButton fx:id="filter" mnemonicParsing="false" prefHeight="23.0" prefWidth="191.0" text="Filter by categories">
+               <items>
+                  <MenuItem fx:id="recover" mnemonicParsing="false" text="all" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="sort" mnemonicParsing="false" prefHeight="23.0" prefWidth="103.0" text="Sort by">
+               <items>
+                  <MenuItem fx:id="name" mnemonicParsing="false" text="name" />
+                  <MenuItem fx:id="duration" mnemonicParsing="false" text="duration" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="theme" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" text="Theme">
+               <items>
+                  <MenuItem fx:id="DAYTIME" mnemonicParsing="false" text="DAYTIME" />
+                  <MenuItem fx:id="NIGHTTIME" mnemonicParsing="false" text="NIGHTTIME" />
+                  <MenuItem fx:id="HOLIDAY" mnemonicParsing="false" text="HOLIDAY" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="task" mnemonicParsing="false" prefHeight="23.0" prefWidth="97.0" text="Add Task">
+               <items>
+                  <MenuItem fx:id="MON" mnemonicParsing="false" text="Monday" />
+                  <MenuItem fx:id="TUE" mnemonicParsing="false" text="Tuesday" />
+                  <MenuItem fx:id="WED" mnemonicParsing="false" text="Wednesday" />
+                  <MenuItem fx:id="THU" mnemonicParsing="false" text="Thursday" />
+                  <MenuItem fx:id="FRI" mnemonicParsing="false" text="Friday" />
+                  <MenuItem fx:id="SUN" mnemonicParsing="false" text="Sunday" />
+                  <MenuItem fx:id="SAT" mnemonicParsing="false" text="Saturday" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="event" mnemonicParsing="false" prefHeight="23.0" prefWidth="117.0" text="Add Event">
+               <items>
+                  <MenuItem fx:id="MONE" mnemonicParsing="false" text="Monday" />
+                  <MenuItem fx:id="TUEE" mnemonicParsing="false" text="Tuesday" />
+                  <MenuItem fx:id="WEDE" mnemonicParsing="false" text="Wednesday" />
+                  <MenuItem fx:id="THUE" mnemonicParsing="false" text="Thursday" />
+                  <MenuItem fx:id="FRIE" mnemonicParsing="false" text="Friday" />
+                  <MenuItem fx:id="SUNE" mnemonicParsing="false" text="Sunday" />
+                  <MenuItem fx:id="SATE" mnemonicParsing="false" text="Saturday" />
+               </items>
+            </MenuButton>
+            <Button fx:id="category" mnemonicParsing="false" prefHeight="23.0" prefWidth="142.0" text="Add Category" />
+            <DatePicker fx:id="date" promptText="choose date" />
+            <HBox prefHeight="22.0" prefWidth="243.0">
+               <Button fx:id="search" mnemonicParsing="false" prefHeight="23.0" prefWidth="72.0" text="search" />
+               <TextField fx:id="searchField" prefHeight="23.0" prefWidth="180.0" promptText="search item" />
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <Label prefHeight="23.0" prefWidth="66.0" text="Max Events" />
+               <TextField fx:id="eventsMax" prefHeight="23.0" prefWidth="38.0" />
+               <Label prefHeight="23.0" prefWidth="66.0" text="Max Tasks" />
+               <TextField fx:id="tasksMax" prefHeight="20.0" prefWidth="153.0" />
+               <Button fx:id="enterMax" mnemonicParsing="false" text="Enter" />
+            </VBox>
+         </HBox>
+         <HBox prefHeight="800.0" prefWidth="1386.0">
+            <VBox fx:id="sunday" alignment="TOP_CENTER" prefHeight="186.0" prefWidth="202.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+            </VBox>
+            <VBox fx:id="monday" alignment="TOP_CENTER" prefHeight="148.0" prefWidth="201.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+
+            </VBox>
+            <VBox fx:id="tuesday" prefHeight="471.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+            </VBox>
+            <VBox fx:id="wednesday" alignment="TOP_CENTER" prefHeight="186.0" prefWidth="202.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wedesday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+
+            </VBox>
+            <VBox fx:id="thursday" alignment="TOP_CENTER" prefHeight="186.0" prefWidth="202.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thuesday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+
+            </VBox>
+            <VBox fx:id="friday" alignment="TOP_CENTER" prefHeight="186.0" prefWidth="202.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Friday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+            </VBox>
+            <VBox fx:id="saturday" alignment="TOP_CENTER" prefHeight="186.0" prefWidth="202.0" style="-fx-border-color: black;">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saturday" textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " textAlignment="CENTER" wrappingWidth="197.9109649658203" />
+            </VBox>
+         </HBox>
+      </VBox>
+   </AnchorPane>
+</Scene>

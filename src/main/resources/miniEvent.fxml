@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200" prefWidth="200">
+      <children>
+         <TitledPane animated="false" prefHeight="240.0" prefWidth="240.0" text="Task detail">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <VBox layoutY="7.0" prefHeight="215.0" prefWidth="240.0">
+                        <children>
+                           <HBox prefHeight="67.0" prefWidth="240.0">
+                              <children>
+                                 <ImageView fitHeight="65.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" />
+                                 <Label fx:id="name" prefHeight="48.0" prefWidth="156.0" />
+                              </children>
+                           </HBox>
+                           <HBox prefHeight="11.0" prefWidth="300.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="date :   ">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                 </Text>
+                                 <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="238.70215797424316" />
+                              </children>
+                           </HBox>
+                           <HBox prefHeight="5.0" prefWidth="300.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Duration： ">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                 </Text>
+                                 <Text fx:id="duration" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.6338460445404" />
+                              </children>
+                           </HBox>
+                           <HBox prefHeight="4.0" prefWidth="300.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time： ">
+                                    <font>
+                                       <Font size="10.0" />
+                                    </font>
+                                 </Text>
+                                 <Text fx:id="start" strokeType="OUTSIDE" strokeWidth="0.0" />
+                              </children>
+                           </HBox>
+                           <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           <Button fx:id="close" mnemonicParsing="false" text="close" />
+                        </children>
+                     </VBox>
+                  </children>
+               </AnchorPane>
+           </content>
+         </TitledPane>
+      </children></AnchorPane>
+</Scene>
